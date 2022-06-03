@@ -1,0 +1,134 @@
+@media(max-width:1100px) {
+  .inner {
+    width: 96%;
+    padding: 100px 0 0;
+  }
+
+  .project-cards {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .home-text {
+    margin-right: 0;
+  }
+
+  .about-text {
+    margin-left: 0;
+  }
+
+  .about-text {
+    order: 0;
+  }
+
+  .text-wrapper {
+    text-align: center;
+  }
+
+  .section-img {
+    margin-top: 70px;
+  }
+
+  .about-img {
+    order: 1;
+  }
+
+  .project-card.active {
+    height: 750px;
+  }
+
+  .projects-text {
+    padding: 0 10px;
+  }
+
+  .projects-pic {
+    height: 300px;
+    width: 300px;
+    margin-right: 0;
+  }
+  
+}
+
+@media(max-width:760px) {
+  .menu {
+    display: none;
+    position: fixed;
+    left: -100%;
+    background-color: var(--white);
+    width: 100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  .menu.active {
+    display: inline-block;
+    left: 0;
+    top: 45px;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .menu-icon {
+    font-size: 35px;
+    color: var(--grey);
+  }
+
+  .menu-list {
+    display: block;
+    margin-right: 0;
+  }
+
+  .my-pic, .background-box {
+    height: 300px;
+    width: 300px;
+  }
+
+  .background-box {
+    top: 35px;
+  }
+
+  .home-box {
+    left: 25px;
+  }
+
+  .about-box {
+    right: 25px;
+  }
+
+  .project-cards {
+    grid-template-columns: repeat(1,1fr);
+  }
+
+  .project-card.active {
+    padding: 25px 0 25px 0;
+    height: 890px;
+  }
+
+  .card {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .arror {
+    display: none;
+  }
+
+  .footer-cards {
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    gap: 0;
+  }
+}
